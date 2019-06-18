@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 require 'file_storage'
 require 'thor'
+# load the file storage file
+require File.expand_path('lib/file_storage.rb')
 
 # Class for LDAP cli
 class Ldapcli < Thor
