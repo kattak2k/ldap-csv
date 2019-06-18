@@ -1,11 +1,12 @@
+# frozen_string_literal: true
+
 require 'pstore'
-@@files=[]
+@@files = []
 
 class FileStorage
   def initialize(_uname = 'katta')
     @store = PStore.new('/tmp/ldap_csv.txt')
     @username = _uname
-
   end
 
   def read_file
@@ -39,3 +40,4 @@ class FileStorage
     @store.transaction { |s| p s }
   end
 end
+
