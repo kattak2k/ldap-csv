@@ -23,9 +23,3 @@ class Ldapcli < Thor
 end
 
 Ldapcli.start(ARGV)
-
-# @new_rec = Ldapcli.add_ldap_entry('ou=people,dc=example,dc=org')
-@read_rec = Ldapcli.new.read_ldap_entry
-# @del_rec = Ldapcli.remove_ldap_entry('ou=people,dc=example,dc=org')
-# p @new_rec
-# p @del_rec
