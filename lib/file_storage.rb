@@ -10,6 +10,7 @@ class FileStorage
   end
 
   def read_file
+    #@store.transaction { @store.fetch(:username, "default value") }
     @store.transaction(true) { @store.roots.each { |x| @@files << @store[x] } }
     @@files.uniq!
   end
