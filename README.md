@@ -20,6 +20,8 @@ ruby lib/ldap_csv_cli.rb remove_ldap_entry "ou=people,dc=example,dc=org"
 ### List records
 ```
 ruby lib/ldap_csv_cli.rb read_ldap_entry
+
+data received back : ["ou=people,dc=example,dc=org", "Ravi", "Ravi Katta", "jay.hom4u@gmail.com", "123999", "/app/home/", "N1234", "G12345674"]
 ```
 
 
